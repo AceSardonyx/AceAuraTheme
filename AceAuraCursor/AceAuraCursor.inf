@@ -1,0 +1,55 @@
+Right Click & Click Install
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, 
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+
+"Alternate Select.cur"
+"Busy.ani"
+"Diagonal Resize 1.ani"
+"Diagonal Resize 2.ani"
+"Handwriting.ani"
+"Help Select.ani"
+"Horizonal Resize.ani"
+"Link Select.cur"
+"Move.ani"
+"Normal Select.cur"
+"Other Select.cur"
+"Precision Select.ani"
+"Text Select.ani"
+"Unavaible.ani"
+"Vertical Resize.ani"
+"Working In Background.ani"
+
+[Strings]
+CUR_DIR        	= "Cursors\AceAuraCursor"
+SCHEME_NAME    	= "AceAuraCursor"
+pointer		= "Normal Select.cur"
+help		= "Help Select.ani"
+work		= "Working In Background.ani"
+busy		= "Busy.ani"
+cross		= "Precision Select.ani"
+text		= "Text Select.ani"
+hand		= "Handwriting.ani"
+unavailiable	= "Unavaible.ani"
+vert		= "Vertical Resize.ani"
+horz		= "Horizonal Resize.ani"
+dgn1		= "Diagonal Resize 1.ani"
+dgn2		= "Diagonal Resize 2.ani"
+move		= "Move.ani"
+alternate	= "Alternate Select.cur"
+link		= "Link Select.cur"
